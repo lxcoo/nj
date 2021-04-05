@@ -5647,7 +5647,7 @@ body.mdui-locked {
   border-radius: 2px;
 }
 .mdui-typo ul {
-  padding-left: 2em;
+  padding-left: 0em;
   list-style: disc;
 }
 .mdui-typo ol {
@@ -8975,14 +8975,14 @@ th.mdui-table-cell-checkbox .mdui-checkbox {
 /* 未选中时或禁用时 按下的阴影 */
 .mdui-switch:active input[type="checkbox"] + .mdui-switch-icon::before,
 .mdui-switch input[type="checkbox"]:focus + .mdui-switch-icon::before {
-  -webkit-box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 0 0 15px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 0 0 15px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 /* 已选中时按下的阴影 */
 .mdui-switch:active input[type="checkbox"]:checked:not(:disabled) + .mdui-switch-icon::before,
 .mdui-switch input[type="checkbox"]:focus:checked:not(:disabled) + .mdui-switch-icon::before {
-  -webkit-box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 0 0 15px rgba(255, 64, 129, 0.16);
-          box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 0 0 15px rgba(255, 64, 129, 0.16);
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 /* 禁用状态 */
 .mdui-switch input[type="checkbox"]:disabled + .mdui-switch-icon {
