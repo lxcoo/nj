@@ -226,7 +226,7 @@ window.boot = function() {
 
     // init assets
     cc.AssetLibrary.init({
-        libraryPath: 'cdn.jsdelivr.net/gh/lxcoo/lxcoo.github.io/res/import',
+        libraryPath: 'https://cdn.jsdelivr.net/gh/lxcoo/lxcoo.github.io/res/import',
         rawAssetsBase: 'https://cdn.jsdelivr.net/gh/lxcoo/lxcoo.github.io/res/raw-',
         rawAssets: settings.rawAssets,
         packedAssets: settings.packedAssets,
