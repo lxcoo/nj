@@ -1,7 +1,6 @@
 let res
   function shorturl() {
-      alert(document.querySelector("#mm").value)
-    if(document.querySelector("#mm").value==""){
+    if(document.querySelector("#text").value==""){
         alert("Url cannot be empty!")
         return
     }
@@ -11,7 +10,7 @@ let res
     fetch(window.location.pathname, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ url: document.querySelector("#text").value })
+      body: JSON.stringify({ url: document.querySelector("#text").value }, { mima: document.querySelector("#mm").value })
     }).then(function(response) {
     return response.json();
   })
