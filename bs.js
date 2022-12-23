@@ -19,7 +19,7 @@ let res
     document.getElementById("searchbtn").disabled=false;
 	document.getElementById("searchbtn").innerHTML=' Shorten it';
     if(res.key!=="")
-    document.getElementById("result").innerHTML=window.location.host+res.key;
+    document.getElementById("result").innerHTML="http://"+window.location.host+res.key;
     $('#exampleModal').modal('show')
   }).catch(function(err){alert("未知错误，请重试!");
   console.log(err);
